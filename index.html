@@ -45,6 +45,9 @@ footer li{margin:4px 0}
 <article><p class="head"><span class="num">2.1</span><b>Lamb</b> walks behind the far player</p>
 <div class="pair"><figure><video src="v/2_1_fixed.mp4" muted loop playsinline controls preload="metadata"></video><figcaption><b>TTM camera</b></figcaption></figure><figure><video src="v/2_1_moving.mp4" muted loop playsinline controls preload="metadata"></video><figcaption><b>Moving camera:</b> a small circle, ±2°</figcaption></figure></div>
 </article>
+<article><p class="head"><span class="num">2.5</span><b>Baby elephant</b> walks slowly across the floor while the two men pass the ball</p>
+<div class="pair"><figure><video src="v/2_5_fixed.mp4" muted loop playsinline controls preload="metadata"></video><figcaption><b>TTM camera</b></figcaption></figure><figure><video src="v/2_5_moving.mp4" muted loop playsinline controls preload="metadata"></video><figcaption><b>Moving camera:</b> side to side, ±4°</figcaption></figure></div>
+</article>
 </section>
 <section id="s3"><h3>N3DV Coffee Martini</h3>
 <article><p class="head"><span class="num">3.1</span><b>Hamster</b> runs along the counter while the bartender pours</p>
@@ -115,7 +118,7 @@ footer li{margin:4px 0}
 <div class="pair"><figure><video src="v/9_2_fixed.mp4" muted loop playsinline controls preload="metadata"></video><figcaption><b>TTM camera</b></figcaption></figure></div>
 </article>
 </section>
-<footer><h2>About the moving views</h2><ul><li>Each moving clip starts and ends in the TTM view, and the camera always looks at the object.</li><li>The size of each move is the largest that stayed inside the reconstructed scene on our checks: scene coverage per frame, the object kept in frame, and a by-eye look at sampled frames for floaters, holes and smears.</li><li>In most clips, scene splats closer to the camera than a fixed fraction of its distance to the object (0.3–0.6, set per clip) are not drawn. That fraction is set so that the view from the TTM camera does not change.</li><li>Rows with only the TTM camera have no moving clip that stayed clean, even at a very small move: the captured scene itself breaks up near that view.</li><li>Each object is reconstructed from one generated video, so a wide move also shows sides that video never saw, where the shape is weakest.</li></ul></footer></div><script>
+<footer><h2>About the moving views</h2><ul><li>Each moving clip starts and ends in the TTM view, and the camera always looks at the object.</li><li>The size of each move is the largest that stayed inside the reconstructed scene on our checks: scene coverage per frame, the object kept in frame, and a by-eye look at sampled frames for floaters, holes and smears.</li><li>In most clips, scene splats closer to the camera than a fixed fraction of its distance to the object (0.2–0.6, set per clip) are not drawn. That fraction is set so that the view from the TTM camera does not change.</li><li>Rows with only the TTM camera have no moving clip that stayed clean, even at a very small move: the captured scene itself breaks up near that view.</li><li>Each object is reconstructed from one generated video, so a wide move also shows sides that video never saw, where the shape is weakest.</li></ul></footer></div><script>
 (function(){if(!('IntersectionObserver' in window))return;
 var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){});}else{v.pause();}});},{rootMargin:'160px'});
 [].forEach.call(document.querySelectorAll('video'),function(v){io.observe(v);});})();
