@@ -1,0 +1,216 @@
+{
+ "schema": "studio_4d_inspector_scene",
+ "schema_version": 1,
+ "created_utc": "2026-11-10T21:12:44Z",
+ "scene": {
+  "total": 1593376,
+  "above_min_opacity": 1155929,
+  "min_opacity": 0.02,
+  "budget": 1300000,
+  "kept": 1155929,
+  "log_min": -13.816510557964273,
+  "log_max": 1.1063121089935302,
+  "log_floor": -13.815510557964274,
+  "axes_floored": 4340,
+  "files": [
+   {
+    "count": 385310,
+    "blocks": 95,
+    "file": "scene_0.bin",
+    "bytes": 7323172,
+    "layout": {
+     "block_bounds": {
+      "offset": 0,
+      "bytes": 2280,
+      "dtype": "float32",
+      "shape": [
+       95,
+       6
+      ]
+     },
+     "position": {
+      "offset": 2280,
+      "bytes": 2311860,
+      "dtype": "uint16",
+      "shape": [
+       385310,
+       3
+      ]
+     },
+     "rotation": {
+      "offset": 2314140,
+      "bytes": 1541240,
+      "dtype": "uint32",
+      "shape": [
+       385310
+      ]
+     },
+     "log_scale": {
+      "offset": 3855380,
+      "bytes": 1541240,
+      "dtype": "uint32",
+      "shape": [
+       385310
+      ]
+     },
+     "rgb9e5": {
+      "offset": 5396620,
+      "bytes": 1541240,
+      "dtype": "uint32",
+      "shape": [
+       385310
+      ]
+     },
+     "opacity": {
+      "offset": 6937860,
+      "bytes": 385310,
+      "dtype": "uint8",
+      "shape": [
+       385310
+      ]
+     }
+    }
+   },
+   {
+    "count": 385310,
+    "blocks": 95,
+    "file": "scene_1.bin",
+    "bytes": 7323172,
+    "layout": {
+     "block_bounds": {
+      "offset": 0,
+      "bytes": 2280,
+      "dtype": "float32",
+      "shape": [
+       95,
+       6
+      ]
+     },
+     "position": {
+      "offset": 2280,
+      "bytes": 2311860,
+      "dtype": "uint16",
+      "shape": [
+       385310,
+       3
+      ]
+     },
+     "rotation": {
+      "offset": 2314140,
+      "bytes": 1541240,
+      "dtype": "uint32",
+      "shape": [
+       385310
+      ]
+     },
+     "log_scale": {
+      "offset": 3855380,
+      "bytes": 1541240,
+      "dtype": "uint32",
+      "shape": [
+       385310
+      ]
+     },
+     "rgb9e5": {
+      "offset": 5396620,
+      "bytes": 1541240,
+      "dtype": "uint32",
+      "shape": [
+       385310
+      ]
+     },
+     "opacity": {
+      "offset": 6937860,
+      "bytes": 385310,
+      "dtype": "uint8",
+      "shape": [
+       385310
+      ]
+     }
+    }
+   },
+   {
+    "count": 385309,
+    "blocks": 95,
+    "file": "scene_2.bin",
+    "bytes": 7323156,
+    "layout": {
+     "block_bounds": {
+      "offset": 0,
+      "bytes": 2280,
+      "dtype": "float32",
+      "shape": [
+       95,
+       6
+      ]
+     },
+     "position": {
+      "offset": 2280,
+      "bytes": 2311854,
+      "dtype": "uint16",
+      "shape": [
+       385309,
+       3
+      ]
+     },
+     "rotation": {
+      "offset": 2314136,
+      "bytes": 1541236,
+      "dtype": "uint32",
+      "shape": [
+       385309
+      ]
+     },
+     "log_scale": {
+      "offset": 3855372,
+      "bytes": 1541236,
+      "dtype": "uint32",
+      "shape": [
+       385309
+      ]
+     },
+     "rgb9e5": {
+      "offset": 5396608,
+      "bytes": 1541236,
+      "dtype": "uint32",
+      "shape": [
+       385309
+      ]
+     },
+     "opacity": {
+      "offset": 6937844,
+      "bytes": 385309,
+      "dtype": "uint8",
+      "shape": [
+       385309
+      ]
+     }
+    }
+   }
+  ],
+  "block": 4096,
+  "colour_mode": "rgb9e5",
+  "colour": "one fixed colour per splat (rgb9e5, not clamped above 1)",
+  "reference_camera_centre": [
+   0.7733868507809254,
+   -1.8011246577544473,
+   3.6962389672156455
+  ],
+  "distance_to_camera_p1_p50_p99": [
+   1.5042689788697414,
+   5.623223954637351,
+   21.615151033676074
+  ],
+  "decode_error": {
+   "position_abs_max": 0.0002808889347969452,
+   "rotation_deg_max": 0.2216396432396423,
+   "scale_rel_max": 0.0073203160746682094,
+   "colour_abs_max_at_reference": 0.003878951072692871,
+   "colour_abs_p99_at_reference": 0.0015390515327453613,
+   "opacity_abs_max": 0.0019607819390147496
+  },
+  "bytes": 21969500,
+  "id": "room",
+  "name": "Room"
+ }
+}

@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Explore in 3D · 4D Object Insertion Results</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..700&family=Inter:wght@400;600&display=swap"><style>
+:root{--bg:#0f1217;--panel:#171b22;--fg:#eceff4;--muted:#9aa4b3;--line:#2a303a;--accent:#8aa6ff}
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--fg);font-family:"Inter",Arial,Helvetica,sans-serif;font-size:15px;display:flex;flex-direction:column}
+.bar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;padding:10px max(14px,env(safe-area-inset-left,0px));border-bottom:1px solid var(--line)}
+.bar a{color:var(--accent);text-decoration:none;white-space:nowrap}
+.bar a:hover,.bar a:focus-visible{text-decoration:underline}
+.bar h1{font-family:"Bricolage Grotesque","Inter",Arial,sans-serif;font-size:19px;margin:0;font-weight:650}
+.bar .how{color:var(--muted);font-size:13.5px}
+.bar .others{margin-left:auto;display:flex;gap:12px;font-size:13.5px}
+#host{flex:1;min-height:0;position:relative}
+.msg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;color:var(--muted)}
+</style></head><body><div class="bar"><a href="./">← All results</a><h1 id="title">Explore in 3D</h1><span class="how" id="how">Drag to turn · scroll to move closer · right-drag to slide · space to play</span><span class="others"><a data-d="rabbit" href="viewer.html?d=rabbit">Rabbit</a><a data-d="macaque" href="viewer.html?d=macaque">Macaque</a><a data-d="duck" href="viewer.html?d=duck">Duck</a></span></div><div id="host"><div class="msg" id="msg">Loading…</div></div><script src="inspector4d.js"></script><script>var CFG={"rabbit": {"manifest": "viewer/rabbit/manifest.json", "scene": "viewer/scene_room/manifest.json", "title": "Rabbit \u00b7 Room", "mb": 47, "object": "Rabbit", "action": "sits, hops, lands behind the table leg", "scene_name": "Room", "gaussians": 80000, "scene_gaussians": 1155929, "frames": 49}, "macaque": {"manifest": "viewer/macaque/manifest.json", "scene": "viewer/scene_garden/manifest.json", "title": "Macaque \u00b7 Garden", "mb": 50, "object": "Macaque", "action": "jumps off the table and walks on the grass", "scene_name": "Garden", "gaussians": 50000, "scene_gaussians": 1300000, "frames": 81}, "duck": {"manifest": "viewer/duck/manifest.json", "scene": "viewer/scene_coffee/manifest.json", "title": "Duck \u00b7 Coffee Martini", "mb": 65, "object": "Duck", "action": "waddles while the bartender pours", "scene_name": "Coffee Martini", "gaussians": 50000, "scene_gaussians": 169154, "frames": 65}};(function(){var d=new URLSearchParams(location.search).get('d'),c=CFG[d]||CFG[Object.keys(CFG)[0]],host=document.getElementById('host'),msg=document.getElementById('msg');
+document.getElementById('title').textContent=c.title;document.title=c.title+' \u00b7 Explore in 3D';
+[].forEach.call(document.querySelectorAll('.others a'),function(a){if(CFG[a.getAttribute('data-d')]===c)a.style.display='none';});
+var gl=null;try{var t=document.createElement('canvas');gl=t.getContext('webgl2');}catch(e){}
+if(!gl||!window.Inspector4D){msg.textContent='This viewer needs WebGL 2, which this browser does not offer. The clips on the results page show the same scenes.';return;}
+msg.textContent='Loading '+c.mb+' MB \u2026';
+try{var view=window.Inspector4D.create(host,{manifest:c.manifest,sceneManifest:c.scene,title:c.title,camera:'ttm',onStatus:function(s){if(msg.parentNode&&/ready|fps|frame/i.test(s))msg.remove();}});
+window.view=view;setTimeout(function(){if(msg.parentNode)msg.remove();},1500);
+var b=host.querySelector('[data-cam="ttm"]');if(b){b.textContent='Start camera';b.title='The fixed camera the object was generated for (T)';}
+}catch(e){msg.textContent='The viewer could not start: '+e.message;}
+})();</script></body></html>

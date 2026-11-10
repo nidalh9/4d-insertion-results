@@ -1,0 +1,217 @@
+{
+ "schema": "studio_4d_inspector_scene",
+ "schema_version": 1,
+ "created_utc": "2026-11-10T21:14:40Z",
+ "scene": {
+  "total": 2909346,
+  "above_min_opacity": 2557306,
+  "min_opacity": 0.02,
+  "budget": 1300000,
+  "importance_rule": "opacity x (two largest scales product) / distance^2 from the reference camera centre",
+  "kept": 1300000,
+  "log_min": -13.816510557964273,
+  "log_max": 1.417967988014221,
+  "log_floor": -13.815510557964274,
+  "axes_floored": 862,
+  "files": [
+   {
+    "count": 433334,
+    "blocks": 106,
+    "file": "scene_0.bin",
+    "bytes": 8235892,
+    "layout": {
+     "block_bounds": {
+      "offset": 0,
+      "bytes": 2544,
+      "dtype": "float32",
+      "shape": [
+       106,
+       6
+      ]
+     },
+     "position": {
+      "offset": 2544,
+      "bytes": 2600004,
+      "dtype": "uint16",
+      "shape": [
+       433334,
+       3
+      ]
+     },
+     "rotation": {
+      "offset": 2602548,
+      "bytes": 1733336,
+      "dtype": "uint32",
+      "shape": [
+       433334
+      ]
+     },
+     "log_scale": {
+      "offset": 4335884,
+      "bytes": 1733336,
+      "dtype": "uint32",
+      "shape": [
+       433334
+      ]
+     },
+     "rgb9e5": {
+      "offset": 6069220,
+      "bytes": 1733336,
+      "dtype": "uint32",
+      "shape": [
+       433334
+      ]
+     },
+     "opacity": {
+      "offset": 7802556,
+      "bytes": 433334,
+      "dtype": "uint8",
+      "shape": [
+       433334
+      ]
+     }
+    }
+   },
+   {
+    "count": 433333,
+    "blocks": 106,
+    "file": "scene_1.bin",
+    "bytes": 8235876,
+    "layout": {
+     "block_bounds": {
+      "offset": 0,
+      "bytes": 2544,
+      "dtype": "float32",
+      "shape": [
+       106,
+       6
+      ]
+     },
+     "position": {
+      "offset": 2544,
+      "bytes": 2599998,
+      "dtype": "uint16",
+      "shape": [
+       433333,
+       3
+      ]
+     },
+     "rotation": {
+      "offset": 2602544,
+      "bytes": 1733332,
+      "dtype": "uint32",
+      "shape": [
+       433333
+      ]
+     },
+     "log_scale": {
+      "offset": 4335876,
+      "bytes": 1733332,
+      "dtype": "uint32",
+      "shape": [
+       433333
+      ]
+     },
+     "rgb9e5": {
+      "offset": 6069208,
+      "bytes": 1733332,
+      "dtype": "uint32",
+      "shape": [
+       433333
+      ]
+     },
+     "opacity": {
+      "offset": 7802540,
+      "bytes": 433333,
+      "dtype": "uint8",
+      "shape": [
+       433333
+      ]
+     }
+    }
+   },
+   {
+    "count": 433333,
+    "blocks": 106,
+    "file": "scene_2.bin",
+    "bytes": 8235876,
+    "layout": {
+     "block_bounds": {
+      "offset": 0,
+      "bytes": 2544,
+      "dtype": "float32",
+      "shape": [
+       106,
+       6
+      ]
+     },
+     "position": {
+      "offset": 2544,
+      "bytes": 2599998,
+      "dtype": "uint16",
+      "shape": [
+       433333,
+       3
+      ]
+     },
+     "rotation": {
+      "offset": 2602544,
+      "bytes": 1733332,
+      "dtype": "uint32",
+      "shape": [
+       433333
+      ]
+     },
+     "log_scale": {
+      "offset": 4335876,
+      "bytes": 1733332,
+      "dtype": "uint32",
+      "shape": [
+       433333
+      ]
+     },
+     "rgb9e5": {
+      "offset": 6069208,
+      "bytes": 1733332,
+      "dtype": "uint32",
+      "shape": [
+       433333
+      ]
+     },
+     "opacity": {
+      "offset": 7802540,
+      "bytes": 433333,
+      "dtype": "uint8",
+      "shape": [
+       433333
+      ]
+     }
+    }
+   }
+  ],
+  "block": 4096,
+  "colour_mode": "rgb9e5",
+  "colour": "one fixed colour per splat (rgb9e5, not clamped above 1)",
+  "reference_camera_centre": [
+   -7.452560154457214,
+   2.3375966519891875,
+   -2.447021995332502
+  ],
+  "distance_to_camera_p1_p50_p99": [
+   2.0547788752438128,
+   8.947719388266835,
+   43.95627724910236
+  ],
+  "decode_error": {
+   "position_abs_max": 0.0010632071945299384,
+   "rotation_deg_max": 0.250829183983723,
+   "scale_rel_max": 0.007473768138112735,
+   "colour_abs_max_at_reference": 0.0039052963256835938,
+   "colour_abs_p99_at_reference": 0.001676321029663086,
+   "opacity_abs_max": 0.001960780580586352
+  },
+  "bytes": 24707644,
+  "id": "garden",
+  "name": "Garden"
+ }
+}
