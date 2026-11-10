@@ -26,7 +26,7 @@ footer h2{font-size:20px;color:var(--fg);margin:0 0 6px;padding:0;border:0}
 footer li{margin:4px 0}
 </style></head><body><div class="wrap"><header><h1>4D Object Insertion into Captured Scenes</h1>
 <p class="lede">Each video is one 4D object inserted into a captured scene, rendered with the camera moving around the object. Object and scene are rendered together.</p>
-<nav><a href="#s1">Panoptic juggle</a><a href="#s2">Panoptic basketball</a><a href="#s3">N3DV Coffee Martini</a><a href="#s5">Garden</a><a href="#s6">Room</a><a href="#s7">Stump</a><a href="#s8">Playroom</a></nav></header>
+<nav><a href="#s1">Panoptic juggle</a><a href="#s2">Panoptic basketball</a><a href="#s3">N3DV Coffee Martini</a><a href="#s5">Garden</a><a href="#s6">Room</a><a href="#s7">Stump</a><a href="#s8">Playroom</a><a href="#s9">Reef</a></nav></header>
 <h2>Scenes with their own motion</h2>
 <section id="s1"><h3>Panoptic juggle</h3><div class="grid">
 <article><p class="head"><span class="num">1.9</span><b>Teddy bear</b> does jumping jacks while the juggler walks in front of it</p><figure><video src="v/1_9_wide.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: side to side, ±12°</figcaption></figure></article>
@@ -54,6 +54,9 @@ footer li{margin:4px 0}
 </div></section>
 <section id="s8"><h3>Playroom</h3><div class="grid">
 <article><p class="head"><span class="num">8.3</span><b>Penguin</b> waddles upright, feet stepping</p><figure><video src="v/8_3_moving.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: a loop, ±12° side to side and up to 48° above the start</figcaption></figure></article>
+</div></section>
+<section id="s9"><h3>Reef</h3><div class="grid">
+<article><p class="head"><span class="num">9.1</span><b>Shark</b> swims over the reef, tail beating</p><figure><video src="v/9_1_moving.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: side to side, ±6°, with a 60% push-in</figcaption></figure></article>
 </div></section>
 <footer><h2>About the camera moves</h2><ul><li>The camera always looks at the object. Each move is a new render of the same placed object; nothing is fitted again for it.</li><li>The size of each move is the largest that stayed inside the reconstructed scene on our checks: scene coverage per frame, the object kept in frame, and a by-eye look at the frames for floaters, holes and smears.</li><li>In most clips, scene splats closer to the camera than a fixed fraction of its distance to the object (0.2–0.6, set per clip) are not drawn.</li><li>Each object is reconstructed from one generated video, so a wide move also shows sides that video never saw, where the shape is weakest.</li></ul></footer></div><script>
 (function(){if(!('IntersectionObserver' in window))return;
