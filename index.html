@@ -29,15 +29,15 @@ footer li{margin:4px 0}
 <nav><a href="#s1">Panoptic juggle</a><a href="#s2">Panoptic basketball</a><a href="#s3">N3DV Coffee Martini</a><a href="#s5">Garden</a><a href="#s6">Room</a><a href="#s7">Stump</a><a href="#s8">Playroom</a></nav></header>
 <h2>Scenes with their own motion</h2>
 <section id="s1"><h3>Panoptic juggle</h3><div class="grid">
-<article><p class="head"><span class="num">1.9</span><b>Teddy bear</b> does jumping jacks while the juggler walks in front of it</p><figure><video src="v/1_9_moving.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: side to side, ±4°</figcaption></figure></article>
+<article><p class="head"><span class="num">1.9</span><b>Teddy bear</b> does jumping jacks while the juggler walks in front of it</p><figure><video src="v/1_9_wide.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: side to side, ±12°</figcaption></figure></article>
 <article><p class="head"><span class="num">1.11</span><b>Labrador</b> walks behind the juggler and out the other side</p><figure><video src="v/1_11_moving.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: side to side, ±12°</figcaption></figure></article>
 </div></section>
 <section id="s2"><h3>Panoptic basketball</h3><div class="grid">
-<article><p class="head"><span class="num">2.1</span><b>Lamb</b> walks behind the far player</p><figure><video src="v/2_1_moving.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: a small circle, ±2°</figcaption></figure></article>
+<article><p class="head"><span class="num">2.1</span><b>Lamb</b> walks behind the far player</p><figure><video src="v/2_1_wide.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: side to side, ±12°</figcaption></figure></article>
 </div></section>
 <section id="s3"><h3>N3DV Coffee Martini</h3><div class="grid">
-<article><p class="head"><span class="num">3.1</span><b>Hamster</b> runs along the counter while the bartender pours</p><figure><video src="v/3_1_moving.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: a small circle, ±4°</figcaption></figure></article>
-<article><p class="head"><span class="num">3.2</span><b>Duck</b> waddles while the bartender pours</p><figure><video src="v/3_2_moving.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: a small circle, ±4°</figcaption></figure></article>
+<article><p class="head"><span class="num">3.1</span><b>Hamster</b> runs along the counter while the bartender pours</p><figure><video src="v/3_1_wide.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: a one-sided arc, 24° to the left and back</figcaption></figure></article>
+<article><p class="head"><span class="num">3.2</span><b>Duck</b> waddles while the bartender pours</p><figure><video src="v/3_2_wide.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: a one-sided arc, 24° to the left and back</figcaption></figure></article>
 </div></section>
 <h2>Still scenes</h2>
 <section id="s5"><h3>Garden</h3><div class="grid">
@@ -55,7 +55,7 @@ footer li{margin:4px 0}
 <section id="s8"><h3>Playroom</h3><div class="grid">
 <article><p class="head"><span class="num">8.3</span><b>Penguin</b> waddles upright, feet stepping</p><figure><video src="v/8_3_moving.mp4" muted loop playsinline controls preload="metadata"></video><figcaption>Camera: a loop, ±12° side to side and up to 48° above the start</figcaption></figure></article>
 </div></section>
-<footer><h2>About the camera moves</h2><ul><li>The camera always looks at the object. Each move is a new render of the same placed object; nothing is fitted again for it.</li><li>The size of each move is the largest that stayed inside the reconstructed scene on our checks: scene coverage per frame, the object kept in frame, and a by-eye look at the frames for floaters, holes and smears.</li><li>In most clips, scene splats closer to the camera than a fixed fraction of its distance to the object (0.4–0.6, set per clip) are not drawn.</li><li>Each object is reconstructed from one generated video, so a wide move also shows sides that video never saw, where the shape is weakest.</li></ul></footer></div><script>
+<footer><h2>About the camera moves</h2><ul><li>The camera always looks at the object. Each move is a new render of the same placed object; nothing is fitted again for it.</li><li>The size of each move is the largest that stayed inside the reconstructed scene on our checks: scene coverage per frame, the object kept in frame, and a by-eye look at the frames for floaters, holes and smears.</li><li>In most clips, scene splats closer to the camera than a fixed fraction of its distance to the object (0.2–0.6, set per clip) are not drawn.</li><li>Each object is reconstructed from one generated video, so a wide move also shows sides that video never saw, where the shape is weakest.</li></ul></footer></div><script>
 (function(){if(!('IntersectionObserver' in window))return;
 var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){var p=v.play();if(p&&p.catch)p.catch(function(){});}else{v.pause();}});},{rootMargin:'160px'});
 [].forEach.call(document.querySelectorAll('video'),function(v){io.observe(v);});})();
