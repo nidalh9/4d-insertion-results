@@ -1,7 +1,7 @@
 {
  "schema": "studio_4d_inspector_scene",
  "schema_version": 1,
- "created_utc": "2026-11-10T21:14:40Z",
+ "created_utc": "2026-11-10T21:48:19Z",
  "scene": {
   "total": 2909346,
   "above_min_opacity": 2557306,
@@ -12,7 +12,7 @@
   "log_min": -13.816510557964273,
   "log_max": 1.417967988014221,
   "log_floor": -13.815510557964274,
-  "axes_floored": 862,
+  "axes_floored": 898,
   "files": [
    {
     "count": 433334,
@@ -193,21 +193,21 @@
   "colour_mode": "rgb9e5",
   "colour": "one fixed colour per splat (rgb9e5, not clamped above 1)",
   "reference_camera_centre": [
-   -7.452560154457214,
-   2.3375966519891875,
-   -2.447021995332502
+   -0.9480705399826078,
+   4.877738746969751,
+   -7.19108251468492
   ],
   "distance_to_camera_p1_p50_p99": [
-   2.0547788752438128,
-   8.947719388266835,
-   43.95627724910236
+   2.932143419535091,
+   9.45454755083442,
+   49.13401364985761
   ],
   "decode_error": {
-   "position_abs_max": 0.0010632071945299384,
+   "position_abs_max": 0.0010682253385797145,
    "rotation_deg_max": 0.250829183983723,
    "scale_rel_max": 0.007473768138112735,
-   "colour_abs_max_at_reference": 0.0039052963256835938,
-   "colour_abs_p99_at_reference": 0.001676321029663086,
+   "colour_abs_max_at_reference": 0.0039058923721313477,
+   "colour_abs_p99_at_reference": 0.0017099380493164062,
    "opacity_abs_max": 0.001960780580586352
   },
   "bytes": 24707644,
